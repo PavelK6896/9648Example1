@@ -52,7 +52,7 @@
 
     <tx:annotation-driven/>
 
-    <jpa:repositories base-package="com.spring.mvc.repositories"/>
+    <jpa:data1.repositories base-package="com.spring.mvc.data1.repositories"/>
 
     <bean id="entityManagerFactory"
           class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
