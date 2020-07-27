@@ -14,14 +14,14 @@ public class JTabbedPane1 extends JFrame {
         jPanel1.add(jButton1);
         jPanel1.setBackground(Color.cyan);
         jPanel1.add(new JLabel("JPanel JLabel"));
-        jPanel1.setPreferredSize(new Dimension(100,100)); // задать размер
+        jPanel1.setPreferredSize(new Dimension(100, 100)); // задать размер
 
         jPanel2.add(jButton2);
         jPanel2.setBackground(Color.ORANGE);
         jPanel2.add(new JLabel("JPanel2 JLabel"));
-        jPanel2.setPreferredSize(new Dimension(300,300)); // задать размер
+        jPanel2.setPreferredSize(new Dimension(300, 300)); // задать размер
 
-        JTabbedPane  jTabbedPane = new JTabbedPane(JTabbedPane.TOP); // добавить переключение
+        JTabbedPane jTabbedPane = new JTabbedPane(JTabbedPane.TOP); // добавить переключение
         jTabbedPane.add("JPanel", jPanel1);
         jTabbedPane.add("JPanel2", jPanel2);
 
@@ -32,6 +32,6 @@ public class JTabbedPane1 extends JFrame {
         jFrame.pack();// по краям контента
         jFrame.setLocationRelativeTo(null); // посередине
         jFrame.setVisible(true);
-        jFrame.setSize(500,500); // задать размер
+        jFrame.setSize(500, 500); // задать размер
     }
 }
