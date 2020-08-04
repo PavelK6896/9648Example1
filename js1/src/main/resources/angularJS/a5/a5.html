@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<div ng-controller='c1'>
+    <div ng-controller='c2'>
+        <button ng-click="showBook()">Show c2 Book</button>
+    </div>
+    <div ng-controller='c3'>
+        <button ng-click="showBook()">Show c3 Book</button>
+
+    </div>
+</div>
+
+</body>
+</html>
