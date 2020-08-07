@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<p> 16 - Изолированый скоуп в директивах </p>
+
+<div ng-controller="firstCtrl">
+    <div>My ctrl name is {{name}}</div>
+    <div>My ctrl name is {{color}}</div>
+    <div>
+        <button ng-click='reverse()'>Reverse name</button>
+    </div>
+    --------------------------------------
+    <foo-bar name1="{{name}}" color1="color"  reverse="reverse()"></foo-bar>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<form action="http://localhost:8080" method="POST">
+    <input type="text" name="username" placeholder="username" class="form-control">
+    <input type="password" name="password" placeholder="password" class="form-control">
+    <button type="submit" class="btn btn-success">Login</button>
+</form>
+
+<pre>
+GET /?username=admin&password=q1 HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:63342/9648Example1/js1/ex1/form.html?_ijt=mkvvp8jnel0bcosktla4nf2d12
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: Idea-46a0a97d=5a414ca8-f68c-49f9-a8b7-3b1ec59d0b81; JSESSIONID=2F6C903B99273D6A8FBCE9314E6AA13D
+</pre>
+
+<pre>
+POST / HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 26
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://localhost:63342
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:63342/9682Shop3JavaSpring/templates/page/login_page.html?_ijt=mkvvp8jnel0bcosktla4nf2d12
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: Idea-46a0a97d=5a414ca8-f68c-49f9-a8b7-3b1ec59d0b81; JSESSIONID=2F6C903B99273D6A8FBCE9314E6AA13D
+
+username=admin&password=q1
+</pre>
+
+</body>
+</html>

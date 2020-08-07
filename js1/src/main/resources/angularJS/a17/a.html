@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="main.js"></script>
+    <style>
+        .red1{
+            color: red
+        }
+    </style>
+</head>
+<body>
+<p> 17 - Transclude element в директивах </p>
+<p> обернуть чюжой код новым дивом или или </p>
+
+<form wrap-in="red">
+    <div>
+        <label>Email:</label>
+        <input type="text" placeholder="Place your email">
+    </div>
+    <div>
+        <label>Password:</label>
+        <input type="password" placeholder="Enter your password">
+    </div>
+    <button>Submit</button>
+</form>
+
+<script type="text/ng-template" id="red">
+    <div class="red1">Header for table</div>
+    <div class="red1">Header for table <p>qqq</p></div>
+</script>
+
+
+</body>
+</html>

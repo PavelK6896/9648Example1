@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-mocks.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.5/angular-mocks.js"></script>
+    <script src="main.js"></script>
+
+</head>
+<body>
+<p>19 - Angular-mocks</p>
+
+
+<div ng-controller="mainCtrl">
+    <input type='text' ng-model='book.name'>
+    <input type='button' ng-click='addBook(book)' value='Add me new book please'>
+
+    <div ng-repeat='book in books'>
+        {{book.name}}
+    </div>
+</div>
+
+</body>
+</html>

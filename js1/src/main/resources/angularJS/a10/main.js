@@ -1,8 +1,6 @@
 var app = angular.module('app', []);
 
 app.directive('fooBar', function () {
-
-
     var bookmarks = [
         {
             id: 1,
@@ -17,8 +15,6 @@ app.directive('fooBar', function () {
             name: 'ReactJS'
         }
     ];
-
-
     return {
         template: `
 <div>

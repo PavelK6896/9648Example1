@@ -7,13 +7,12 @@
     <script src="main.js"></script>
 </head>
 <body>
-<p>фильтры пайпы</p>
+<p> transclude </p>
+<p> что бы текст шаблона не пропадал и мы дописали еще трансклуд </p>
+<p> деректива это как темплейт почьти </p>
 <div ng-controller="c1">
-    {{money1 | mf}} <br/>
-    {{money2 | mf}} <br/>
-    {{money3 | mf}} <br/>
+    <foo-bar>FooBar {{name}}</foo-bar>
 </div>
-
 
 </body>
 </html>
