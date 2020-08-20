@@ -4,7 +4,7 @@ app.controller('c1', function($scope) {
     this.m3 = "this.m1"
 
     $scope.showBook = function () {
-        console.log('This is c1 book');
+        console.log('$scope $scope $scopeThis is c1 book');
     };
     this.showBook = function () {
         console.log('This is c1 book');

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+    <!-- Angular Material CSS now available via Google CDN; version 1.1.24 used here -->
+    <link rel="stylesheet"
+          href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.24/angular-material.min.css">
+
+    <!-- Angular Material Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-aria.min.js"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-messages.min.js"></script>-->
+
+    <!-- Angular Material Javascript now available via Google CDN; version 1.1.24 used here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.24/angular-material.min.js"></script>
+    <script src="main.js"></script>
+
+</head>
+<body>
+{{1 +1}}
+
+<div ng-controller="AppCtrl" ng-cloak="">
+    <md-slider ng-model="disabled2" ng-disabled="false" aria-label="Disabled 2"></md-slider>
+
+    <md-slider ng-model="disabled1" aria-label="Disabled 1"></md-slider>
+    <md-slider ng-model="disabled3" aria-label="Disabled 4"></md-slider>
+
+    <md-slider ng-model="disabled1" aria-label="Disabled 1" md-discrete="1"></md-slider>
+
+    <md-slider ng-model="disabled3" aria-label="Disabled 4" md-discrete="20"></md-slider>
+
+    <md-slider ng-model="invert" min="0" max="100" aria-label="regular"></md-slider>
+
+    <md-slider ng-model="disabled3" ng-disabled="false" step="10" md-discrete="" aria-label="Disabled discrete 3"
+               ng-readonly="true"></md-slider>
+
+    <md-slider flex="" class="md-warn" md-discrete="" ng-model="rating2" step="1" min="1" max="5" aria-label="md-warn"></md-slider>
+
+    <md-slider ng-model="myValue" min="5" max="500">
+    </md-slider>
+
+    <md-slider md-discrete="true" ng-model="myDiscreteValue" step="10" min="10" max="130">
+    </md-slider>
+
+    <md-slider md-invert="" ng-model="myValue" step="10" min="10" max="disabled3">
+    </md-slider>
+
+<!--    <md-slider md-discrete="" ng-model="z1"  >    </md-slider>-->
+<!--    <md-slider md-discrete="" ng-model="z3"  >    </md-slider>-->
+
+
+    <md-slider md-discrete="" ng-model="z2" step="100"  min="0" max="5000">    </md-slider>
+
+
+    -----------
+
+
+</div>
+
+</body>
+</html>
