@@ -10,3 +10,6 @@
 /js1/src/main/resources/angularJS/a25/node_modules/
 /9703Camel1Java/.gradle/
 /9703Camel1Java/build/
+
+/**/target/
+/**/*.iml
